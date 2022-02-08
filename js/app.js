@@ -1,19 +1,19 @@
 const insert = buttonValue => {
-  const primeiroNumero = document.getElementById('resultado').innerHTML
-  document.getElementById('resultado').innerHTML = primeiroNumero + buttonValue
+  const firstValue = document.getElementById('resultField').innerHTML
+  document.getElementById('resultField').innerHTML = firstValue + buttonValue
 }
 
-const clean = () => document.getElementById('resultado').innerHTML = ''
+const clean = () => document.getElementById('resultField').innerHTML = ''
 
 const backspace = () => {
-  const resultado = document.getElementById('resultado').innerHTML
-  document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length -1)
+  const inputValue = document.getElementById('resultField').innerHTML
+  document.getElementById('resultField').innerHTML = inputValue.substring(0, inputValue.length -1)
 }
 
 const calculate = () => {
-  const resultado = document.getElementById('resultado').innerHTML
+  const handleCalculate = document.getElementById('resultField').innerHTML
   
-  resultado 
-  ? document.getElementById('resultado').innerHTML = eval(resultado)
-  : document.getElementById('resultado').innerHTML = '0'
+  handleCalculate
+  ? document.getElementById('resultField').innerHTML = eval(handleCalculate).toFixed(2)
+  : document.getElementById('resultField').innerHTML = '0'
 }
