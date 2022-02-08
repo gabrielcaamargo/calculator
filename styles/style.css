@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Russo One', sans-serif;
+}
+
+*:hover{
+  transition: ease-in-out .2s;
+}
+
+.fundo{
+  background-image: linear-gradient(45deg, black, purple);
+  height: 100vh;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.calculadora{
+  position: absolute;
+  background-color: rgba(0, 0, 0, .8);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 15px;
+  padding: 15px;
+  border: 1px solid white;
+}
+
+h1{
+  text-align: center;
+  color: purple;
+}
+
+span{
+  color: white;
+}
+
+#resultado{
+  background-color: #fff;
+  width: 225px;
+  height: 35px;
+  margin: 5px;  
+  padding: 5px;
+  font-size: 25px;
+  color: black;
+  font-weight: bolder;
+  text-align: right;
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+#resultado::placeholder{
+  font-size: 15px;
+  text-align: center;
+}
+
+.botao{
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  cursor: pointer;
+  background-color: rgb(31, 31, 31);
+  color: #FFF;
+  border: none;
+  margin: 3px;
+}
+
+.botao:hover{
+  background-color: rgb(14, 14, 14);
+}
+
+.btn-clean{
+  background-color: rgb(255, 251, 0);
+}
+
+.btn-clean:hover{
+  background-color: rgb(189, 176, 0);
+}
+
+.btn-delete{
+  background-color: rgb(255, 136, 0);
+}
+
+.btn-delete:hover{
+  background-color: rgb(214, 114, 0);
+}
+
+.btn-division{
+  background-color: rgb(0, 110, 255);
+}
+
+.btn-division:hover{
+  background-color: rgb(0, 4, 255);
+}
+
+.btn-multiply{
+  background-color: purple;
+}
+
+.btn-multiply:hover{
+  background-color: rgb(88, 0, 88);
+}
+
+.btn-minus{
+  background-color: red;
+}
+
+.btn-minus:hover{
+  background-color: rgb(190, 0, 0);
+}
+
+.btn-plus{
+  background-color: rgb(0, 255, 0);
+}
+
+.btn-plus:hover{
+  background-color: rgb(0, 128, 0);
+}
+
+.btn-equal{
+  background-color: rgb(255, 0, 170)
+}
+
+.btn-equal:hover{
+  background-color: rgb(202, 0, 135)
+
+}
